@@ -1,0 +1,98 @@
+{
+  "name": "stellarium-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Stellarium Web is an online planetarium that lets you discover the night sky. It's easy to use and beautiful.",
+  "author": "Stellarium Labs <contact@stellarium-labs.com>",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve",
+    "i18n": "vue-cli-service i18n:report"
+  },
+  "dependencies": {
+    "@mdi/font": "^6.9.96",
+    "core-js": "^3.21.1",
+    "leaflet": "^1.8.0",
+    "leaflet-control-geocoder": "^2.4.0",
+    "moment": "^2.29.4",
+    "path-browserify": "^1.0.1",
+    "roboto-fontface": "*",
+    "v-click-outside": "^3.2.0",
+    "vue": "^2.6.14",
+    "vue-cookie": "^1.1.4",
+    "vue-fullscreen": "^2.1.5",
+    "vue-i18n": "^8.27.1",
+    "vue-jsonp": "^2.0.0",
+    "vue-router": "^3.5.3",
+    "vue2-leaflet": "^2.7.1",
+    "vuetify": "^2.6.14",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "eslint-plugin-vuetify": "^1.0.0-beta.8",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "vue-cli-plugin-i18n": "~2.3.1",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "plugins": [
+      "vuetify"
+    ],
+    "rules": {
+      "vuetify/no-deprecated-classes": "error",
+      "vue/multi-word-component-names": "off",
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-end-tag": false
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "eslintIgnore": [
+    "/build/",
+    "/dist/",
+    "/*.js",
+    "src/assets/js/*.js"
+  ],
+  "workspaces": [
+    "src/plugins/*"
+  ]
+}
